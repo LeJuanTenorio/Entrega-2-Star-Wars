@@ -1,0 +1,213 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    background-image: linear-gradient(to bottom, rgba(212, 210, 210, 0), rgba(233, 233, 233, 0.521)), url(https://cdnb.artstation.com/p/assets/images/images/008/937/151/large/darius-kalinauskas-fondor-dock-starwars-conceptart-battlefront-11.jpg?1516199564);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+h1, h2, h3, p, li{
+    color: ghostwhite;
+    margin: 4px;
+    font-weight: 400;
+}
+h1{
+    font-size: 48px;
+}
+h2{
+    font-size: 20px;
+}
+h3{
+    font-size: 12px;
+}
+
+.superior{
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 50px;
+    position: absolute ;
+   
+}
+.navbardiv{
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+    position: fixed;
+    top: 5px;
+    width: 55vw;
+    align-items: center;
+    
+}
+.navbar{
+    list-style-type: none;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 10px;
+    color: black;
+    
+}
+.navbar li{
+    display: inline;
+    text-align: center;
+}
+.iconmenu{
+    height: 60px;
+}
+.description{
+    margin: 20px;
+    width: 50vw;
+}
+.nombreyrat{
+    display: flex;
+    align-items: last baseline;
+}
+.playnsave{
+    display: flex;
+    align-items: center;
+}
+button{
+    color: ghostwhite;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: ghostwhite;
+    border-radius: 10%;
+    margin: 4px;
+    height: 30px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button img{
+    height: 100%;
+}
+
+.seccion{
+    margin: 20px;
+}
+.listcataloge{
+    list-style-type: none;
+    display: flex;
+    overflow-x: scroll;
+}
+.listcataloge li{
+    width: max-content;
+}
+.imgitem{
+    height: 200px;
+}
+.imgitem img{
+    height: 100%;
+    border-radius: 5%;
+}
+.bottomtext{
+    display: flex;
+    justify-content: space-between;
+    height: 28px;
+    font-size: 10px;
+    align-items: center;
+}
+.bottomtext img{
+    height: 12px;
+}
+.stars{
+    display: flex;
+    align-items: center;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.buscar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 150%;
+    background: rgba(255, 255, 255, 0.411);
+    padding: 15px;
+    height: 10px;
+    border-radius: 30px;
+    top: 2px;
+}
+.buscar_texto{
+    border: none;
+    background: none;
+    outline: none;
+    color: aliceblue;
+    float: left;
+    line-height: 60px;
+    transition: .3s;
+    width: 0;
+    left: 10%;
+}
+
+@media screen and (min-width:1024px){
+    .buscar:hover> .buscar_texto{
+        width: 150px;
+    }
+}
+.boton {
+    color: aliceblue;
+}
+.description {
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(https://cdna.artstation.com/p/assets/images/images/002/566/804/large/gus-mendonca-static1-squarespace.jpg?1463165912);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 50px;
+    position: absolute ;
+    left: 5%;
+    top: 100px;
+}
+.iconmenu2{
+    height: 40px;
+    left: -50%;
+    position: relative;
+}
+.tuyo {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0)), url(Sin\ título-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 96vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 0;
+    position: absolute ;
+    left: 50%;
+    top: 25px;
+}
+
+
+.tuyo {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0)), url(cara.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:20vh;
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 0;
+    position: absolute ;
+    left: 45%;
+    top: 100px;
+}
