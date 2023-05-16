@@ -54,7 +54,7 @@
     flex-direction: column;
     justify-content:end;
     align-items:flex-start;
-    background-image: url(image/gif.gif);
+    background-image: url(../images/landing\ page/gif.gif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -67,7 +67,7 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(image/stars.jpeg);
+    background-image: url(../images/landing\ page/stars.jpeg);
     background-position: center;
     background-repeat: repeat-y;
     background-size: cover;
@@ -97,12 +97,12 @@
 }
 
 .introImage{
-    background-image: url(image/duel.jpeg);
+    background-image: url(../images/landing\ page/duel.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover; 
-    width:690px;
-    height:300px;
+    width:1380px;
+    height:600px;
 }
 
 .carrusel{
@@ -118,34 +118,6 @@
 .image{
     width:315px;
     height:400px;
-}
-
-.image1{
-    background-image: url(image/carru\ \(1\).jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover; 
-}
-
-.image2{
-    background-image: url(image/carru\ \(2\).jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover; 
-}
-
-.image3{
-    background-image: url(image/carru\ \(3\).jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover; 
-}
-
-.image4{
-    background-image: url(image/carru\ \(4\).jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover; 
 }
 
 .navesitas{
@@ -186,7 +158,7 @@
 }
 
 .picImage{
-    background-image: url(image/sad.jpeg);
+    background-image: url(../images/landing\ page/sad.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover; 
