@@ -1,14 +1,14 @@
-import { listaCarrusel } from "../js/turnToJson.js";
 import { RenderCarrusel } from "../js/utils.js";
 
 
 const lowerContainer = document.querySelector(".lowerContainer");
-
+const carrusel = document.querySelector(".carrusel");
 
 
 const myFetchCarrusel = async() => {
 
-  const response = await fetch("")
+  const response = await fetch("");
+  const data = await response.json();
 
   for (let item of sum) {
     let imgObj = new RenderCarrusel(item.image);
@@ -17,5 +17,5 @@ const myFetchCarrusel = async() => {
   }
 }
 
-const carrusel = document.querySelector(".carrusel");
-myFetchCarrusel(listaCarrusel);
+
+myFetchCarrusel();
