@@ -1,19 +1,19 @@
 [
     {
         "id": 1,
-        "image": "../Entrega-2-Star-Wars/Assets/images/landing page/carru (1).jpeg"
+        "image": "https://raw.githubusercontent.com/LeJuanTenorio/Entrega-2-Star-Wars/main/Assets/images/landing%20page/carru%20(1).jpeg"
       },
       {
         "id": 2,
-        "image": "../Entrega-2-Star-Wars/Assets/images/landing page/carru (2).jpeg"
+        "image": "https://raw.githubusercontent.com/LeJuanTenorio/Entrega-2-Star-Wars/main/Assets/images/landing%20page/carru%20(2).jpeg"
       },
       {
         "id": 3,
-        "image": "../Entrega-2-Star-Wars/Assets/images/landing page/carru (3).jpeg"
+        "image": "https://raw.githubusercontent.com/LeJuanTenorio/Entrega-2-Star-Wars/main/Assets/images/landing%20page/carru%20(3).jpeg"
       },
       {
         "id": 4,
-        "image": "../Entrega-2-Star-Wars/Assets/images/landing page/carru (4).jpeg"
+        "image": "https://raw.githubusercontent.com/LeJuanTenorio/Entrega-2-Star-Wars/main/Assets/images/landing%20page/carru%20(4).jpeg"
       }
 ]
 
