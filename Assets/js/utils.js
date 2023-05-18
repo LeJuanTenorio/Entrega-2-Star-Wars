@@ -18,3 +18,4 @@ export class RenderCarrusel {
         return imgCarrusel;
     }     
 }
+
