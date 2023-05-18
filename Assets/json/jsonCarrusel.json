@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "image": "https://raw.githubusercontent.com/LeJuanTenorio/Entrega-2-Star-Wars/main/Assets/images/landing%20page/carru%20(1).jpeg"
+        "image": "./images/landing page/carru (1).jpeg"
       },
       {
         "id": 2,
