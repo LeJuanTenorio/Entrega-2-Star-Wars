@@ -10,6 +10,12 @@ body{
     flex-direction: column;
     justify-content: end;
 }
+
+.image{
+    height: 100px;
+    width: 70px; 
+}
+
 h1, h2, h3, p, li{
     color: ghostwhite;
     margin: 4px;
@@ -233,18 +239,26 @@ button img{
 
 }
 
+.content {
+    height: 1840vh;
+}
+
+iframe{
+    height: 67vh;
+    width: 70vw;
+}
+
 .iframeContainer {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
-    max-width: 600px;
-    height: 80%;
-    max-height: 600px;
+    width: 70%;
+    height: 70%;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     padding: 20px;
     overflow-y: auto;
   }
+

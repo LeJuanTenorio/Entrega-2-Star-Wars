@@ -44,7 +44,39 @@
     </div>
    
     
+
 </body>
+
+<script>
+const body = document.body;
+
+const renderIframe = () => {
+  const urlElement = document.getElementsByClassName("peli")[0];
+  const urlNow = urlElement.id;
+
+  const iframeContainer = document.createElement("div");
+  iframeContainer.className = "iframeContainer";
+
+  const iframeUrl = document.createElement("iframe");
+  iframeUrl.src = urlNow;
+  iframeContainer.appendChild(iframeUrl);
+
+  body.appendChild(iframeContainer);
+};
+
+const modalIframe = () => {
+  const iframeContainer = document.querySelector(".iframeContainer");
+  iframeContainer.style.display = "block";
+};
+
+const modalClose = (noModal) => {
+  const iframeContainer = document.querySelector(".iframeContainer");
+  if (noModal.target == iframeContainer) {
+    iframeContainer.style.display = "none";
+  }
+};
+
+</script>
 
 <footer>
 
