@@ -19,3 +19,31 @@ export class RenderCarrusel {
     }     
 }
 
+export class RenderStarWars{
+    image = "";
+    name = "";
+    
+    constructor(image, name) {
+        this.image = image;
+        this.name = name;
+    }
+
+    render(){
+        const starContainer = document.createElement('div');
+        starContainer.className = "starContainer"
+        
+        const imgStar = document.createElement('img');
+        imgStar.className = "imageStar"
+        imgStar.src = this.image;
+
+        const name = document.createElement('p')
+        name.className = "name"
+        name.textContent = this.name;
+
+        starContainer.appendChild(imgStar);
+        starContainer.appendChild(name);
+
+        return starContainer;
+    }     
+}
+

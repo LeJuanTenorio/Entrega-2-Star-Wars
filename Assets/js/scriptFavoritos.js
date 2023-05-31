@@ -1,52 +1,17 @@
-const renderIframe = () => {
-    const reset = document.getElementsByClassName("iframeContainer")
-    reset.remove();
+import { RenderStarWars } from "../js/utils.js"
+const contenedor = document.querySelector(".contenedor");
 
-    const iframe = document.createElement('div');
-    iframe.className = "iframeContainer";
-    
-    const iframeUrl = document.createElement('iframe');
-    iframeUrl.src = url;
-    iframeContainer.appendChild(iframeUrl);
+const myFetchStarWars = async() => {
 
-    body.appendChild(iframeContainer);
-} 
+  const response = await fetch('https://akabab.github.io/starwars-api/api/all.json');
+  const data = await response.json();
 
-const modalIframe = () => {
-modal.style.display = "block";
+  for (let item of data){
+    let char = new RenderStarWars(item.image,item.name);
+    const renderizado = char.render();
+    contenedor.appendChild(renderizado);
+  }
 }
 
-const modalClose = (noModal) => {
-if(noModal.target == modal){
-    modal.style.display = "none";
-}
-}
-
-
-
-
-
-
-const CargarPeliculas = async() => {
-    const respuesta = await fetch ('https://akabab.github.io/starwars-api/api/all.json');
-   console.log(respuesta);
-
-   const peliculas = await respuesta.json();
-   console.log(peliculas)
-let peliculasas = ''; 
-peliculas.forEach((pelicula) => {
-  const imagenUrl = pelicula.image;
-  const imagenCompletaUrl = `https://vignette.wikia.nocookie.net/starwars/images/${imagenUrl}`;
-  const urlWiki = `https://starwars.fandom.com/wiki/${pelicula.name}`;
-  peliculasas = peliculasas + `
-  <link rel="stylesheet" href="/estilos.css">
-  <div class="peli" id ="${urlWiki}">
-      <img class="image" src="${imagenUrl}">
-    </div>
-    <h1 onclick="renderIframe(); modalIframe()">${pelicula.name}</h1>`; 
-});
-document.getElementById('contenedor').innerHTML = peliculasas;
-
-}
-CargarPeliculas(); 
+myFetchStarWars();
 

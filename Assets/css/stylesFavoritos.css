@@ -11,7 +11,7 @@ body{
     justify-content: end;
 }
 
-.image{
+.imageStar{
     height: 100px;
     width: 70px; 
 }
@@ -202,20 +202,6 @@ button img{
     top: 25px;
 }
 
-.content {
-   background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(0, 0, 0, 0)), url();
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80vh;
-    width: 90vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    margin: 50px;
-    position: absolute ;
-    left: 1%;
-    top: 100px;
-}
 
 .contenedor {
     background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(0, 0, 0, 0)), url();
@@ -231,21 +217,26 @@ button img{
      top: 100px;
  }
 
-.personaje {
-    height: 60vh;
-    width: 10vw;
+
+
+.contenedor {
+    display: flex;
     flex-direction: row;
-    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(0, 0, 0, 0)), url();
-
-}
-
-.content {
-    height: 1840vh;
+    flex-wrap: wrap;
+    width: 90%;
 }
 
 iframe{
     height: 67vh;
     width: 70vw;
+}
+
+.starContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:1%;
 }
 
 .iframeContainer {
@@ -261,4 +252,3 @@ iframe{
     padding: 20px;
     overflow-y: auto;
   }
-

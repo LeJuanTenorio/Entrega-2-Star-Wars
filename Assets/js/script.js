@@ -17,5 +17,3 @@ const myFetchCarrusel = async() => {
   }
 }
 
-
-myFetchCarrusel();
