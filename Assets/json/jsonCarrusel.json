@@ -16,7 +16,7 @@
         "image": "https://raw.githubusercontent.com/LeJuanTenorio/Entrega-2-Star-Wars/main/Assets/images/landing%20page/carru%20(4).jpeg"
       }
 ]
-
+{
 "elements":[
   {
     "id": 1,
@@ -604,3 +604,4 @@
     "formerAffiliations": []
   },
 ]
+}
