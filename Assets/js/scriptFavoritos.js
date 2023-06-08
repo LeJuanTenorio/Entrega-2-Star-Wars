@@ -7,9 +7,10 @@ const myFetchStarWars = async() => {
   const data = await response.json();
 
   for (let item of data){
-    let char = new RenderStarWars(item.image,item.name);
+    let char = new RenderStarWars(item.image,item.name,item.id);
     const renderizado = char.render();
     contenedor.appendChild(renderizado);
+    char.addClickListener();
   }
 }
 
