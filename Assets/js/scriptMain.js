@@ -11,6 +11,7 @@ const myFetchStarWars = async() => {
     const renderizado = char.render();
     contenedor.appendChild(renderizado);
     char.addClickListener();
+    char.addRightClickListener;
   }
 }
 

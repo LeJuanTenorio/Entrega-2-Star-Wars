@@ -66,6 +66,18 @@ export class RenderStarWars{
     #obtenerId() {
         return "image-" + this.#id;
     }
+
+    addRightClickListener() {
+        const id = this.#obtenerId();
+        const image = document.querySelector("#" + id);
+        image.addEventListener("contextmenu", async (event) => {
+          event.preventDefault(); // Prevent the default context menu from appearing
+          agregarAFavoritos(this.#id);
+          console.log("Right mouse button clicked");
+        });
+      }
+
+
 }
 
 const existeFavorito = (ids, id) => {
@@ -105,17 +117,13 @@ export const cargarFavoritos = async () => {
 
     const tienda = await cargarTienda();
 
-    for (const producto of tienda) {
-        if(favoritosIds.includes(producto.id)) {
-            const image = document.createElement("img");
-            image.src = producto.image;
-            image.classList.add("image");
-            divFavoritos.appendChild(image);
-
-            image.addEventListener("click", () => {
-                eliminarFavorito(producto.id);
-                cargarFavoritos();
-            })
+    for (const item of tienda) {
+        if(favoritosIds.includes(item.id)) {
+                let char = new RenderStarWars(item.image,item.name,item.id);
+                const renderizado = char.render();
+                divFavoritos.appendChild(renderizado);
+                char.addClickListener();
+                char.addRightClickListener();
         }
     }
 }
