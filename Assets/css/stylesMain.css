@@ -1,6 +1,6 @@
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(44, 0, 0);
+    background-color: rgb(3, 3, 3);
     margin: 0;
     background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(https://cdnb.artstation.com/p/assets/images/images/008/937/151/large/darius-kalinauskas-fondor-dock-starwars-conceptart-battlefront-11.jpg?1516199564);
     background-repeat: no-repeat;
@@ -9,6 +9,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: end;
+   
 }
 
 .imageStar{
