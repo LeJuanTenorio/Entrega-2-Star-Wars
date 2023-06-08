@@ -1,3 +1,5 @@
+const TIENDA = "tienda";
+
 export class RenderCarrusel {
     image = "";
     
@@ -95,3 +97,56 @@ const agregarAFavoritos = (id) => {
     }
 }
 
+export const cargarFavoritos = async () => {
+    const divFavoritos = document.querySelector(".container");
+    divFavoritos.innerHTML = "";
+
+    const favoritosIds = obtenerFavoritos();
+
+    const tienda = await cargarTienda();
+
+    for (const producto of tienda) {
+        if(favoritosIds.includes(producto.id)) {
+            const image = document.createElement("img");
+            image.src = producto.image;
+            image.classList.add("image");
+            divFavoritos.appendChild(image);
+
+            image.addEventListener("click", () => {
+                eliminarFavorito(producto.id);
+                cargarFavoritos();
+            })
+        }
+    }
+}
+
+export const obtenerFavoritos = () => {
+    const correo = localStorage.getItem(USUARIO);
+    const usuarios = localStorage.getItem(PERSONAS);
+
+    if (correo !== null && usuarios !== null) {
+        const usuariosJSON = JSON.parse(usuarios);
+        
+        for (const persona of usuariosJSON) {
+            if (persona.correo === correo) {
+                return persona.favoritos;
+            }
+        }
+    }
+
+    return [];
+}
+
+const cargarTienda = async () => {
+    const tienda = localStorage.getItem(TIENDA);
+
+    if (tienda === null) {
+        const request = await fetch("https://akabab.github.io/starwars-api/api/all.json");
+        const data = await request.json();
+
+        localStorage.setItem(TIENDA, JSON.stringify(data));
+        return data;
+    }
+
+    return JSON.parse(tienda);
+}
